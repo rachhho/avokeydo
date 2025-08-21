@@ -1,0 +1,21 @@
+#wpm-overlay {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 16px;
+    z-index: 9999;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+
+#wpm-overlay strong {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}

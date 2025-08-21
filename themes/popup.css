@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tab-buttons {
+    margin-bottom: 10px;
+}
+
+.tab {
+    display: none;
+}
+
+#logger-tab,
+#metrics-tab {
+    display: block;
+}
+
+#keystrokes,
+#metrics-display {
+    white-space: pre-wrap;
+    text-align: left;
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#writer-container {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+#writer-type {
+    font-size: 1.05em;
+}
+
+#writer-desc {
+    font-size: 0.9em;
+    color: #444;
+}

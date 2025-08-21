@@ -1,0 +1,75 @@
+body {
+    font-family: 'Yuji Boku', serif;
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    background-color: #f5e2ca;
+
+}
+
+h2 {
+    color: #5A2328;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Yuji Boku', serif;
+    background-color: #E2BAB2;
+    border-radius: 5px;
+    border-color: #5A2328;
+    color: #3F4739;
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+}
+button:hover {
+    background-color: #fff8cf;
+    color: #444;
+    border-color: #F5E2CA;
+    
+}
+
+.tab-buttons {
+    margin-bottom: 10px;
+    
+}
+
+.tab {
+    display: none;
+    background-color: #f5e2ca;
+}
+
+#logger-tab,
+#metrics-tab {
+    display: block;
+}
+
+#keystrokes,
+#metrics-display {
+    white-space: pre-wrap;
+    text-align: left;
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #f5e2ca;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#writer-container {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+#writer-type {
+    font-size: 1.05em;
+}
+
+#writer-desc {
+    font-size: 0.9em;
+    color: #3F4739;
+}

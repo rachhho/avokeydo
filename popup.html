@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>avokeydo</title>
+        <link id="theme-stylesheet" rel="stylesheet" href="themes/popup.css"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+        <style>
+            #writer-container {
+                text-align: center;
+                margin: 10px auto;
+                max-width: 90%;
+                line-height: 1.4;
+            }
+
+            #writer-type {
+                font-size: 1.05em;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+
+            #writer-desc {
+                font-size: 0.9em;
+                color: #444;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>avokeydo</h2>
+        <div style="margin-bottom: 10px;">
+            <label for="theme-selector" style="font-size: 14px; margin-right: 6px;">Theme:</label>
+            <select id="theme-selector">
+                <option value="popup">popup</option>
+                <option value="rachel">racho</option>
+            </select>
+        </div>
+
+        <!--Tabs-->
+        <div class="tab-buttons">
+            <button id="tab-logger">Keystrokes</button>
+            <button id="tab-metrics">Metrics</button>
+        </div>
+
+        <!--Logger Tab-->
+        <div id="logger-tab" class="tab">
+            <p id="wpm-display">Current WPM: 0</p>
+            <div id="writer-container">
+                <p id="writer-type">Writer Type: Analyzing...</p>
+                <p id="writer-desc"></p>
+            </div>
+
+            
+            <button id="toggle-wpm">Hide WPM Overlay</button>
+            <button id="clear">Clear Keystrokes</button>
+            <pre id="keystrokes">Loading keystrokes...</pre>
+        </div>
+        <!--Metrics Tab-->
+        <div id="metrics-tab" class="tab" style="display: none;">
+            <pre id="metrics-display">Loading metrics...</pre>
+        </div>
+        
+        <script src="sentiment.min.js"></script>
+        <script type="module" src="global-expose.js"></script>
+        <script type="module" src="popup.js"></script>
+    </body>
+</html>

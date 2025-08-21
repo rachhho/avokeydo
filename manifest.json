@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "keyloo",
+    "version": "1.3",
+    "description": "Tracks keystrokes and displays live WPM.",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["https://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "hello_extension.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
